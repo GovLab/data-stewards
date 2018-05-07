@@ -1,0 +1,71 @@
+body {
+}
+
+.top-bar {
+  background-color: transparent;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  &__button {
+    color: $yellow;
+  }
+  &__logo {
+    position: relative;
+    // padding-right: 140px;
+    > img {
+      height: 210%;
+      position: absolute;
+      top: -28px;
+      @include breakpoint($medium) {
+        right: 40%;
+      }
+      @include breakpoint($small-only) {
+        right: 35%;
+      }
+      @include breakpoint($large) {
+        right: 45%;
+      }
+    }
+  }
+}
+
+.main-menu {
+  box-shadow: none;
+}
+
+.footer {
+  padding-top: 40px;
+  &__content {
+    text-align: center;
+    h4 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      padding-bottom: 20px;
+    }
+    img {
+      padding-bottom: 70px;
+      opacity: .5;
+      transition: all .4s ease;
+      border: dashed;
+      border-color: transparent;
+      &:hover {
+        opacity: 1;
+        transition: all .4s ease;
+      }
+    }
+  }
+}
+
+.copyright {
+  p {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  &__cc-badge {
+    @include breakpoint($small-only) {
+      display: inline;
+    }
+  }
+}

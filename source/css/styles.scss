@@ -1,0 +1,23 @@
+---
+---
+
+* { box-sizing: border-box; }
+
+// Colors
+$purple: #1c1721;
+$yellow: #d8d587;
+$light-purple: #e9e8e9;
+$light-yellow: #f7f7e8;
+
+// Breakpoints
+$small-only: screen and (max-width: 39.9375em);
+$touch: screen and (max-width: 64em);
+$medium: screen and (min-width: 40em);
+$medium-only: screen and (min-width: 40em) and (max-width: 63.9375em);
+$large: screen and (min-width: 64em);
+
+$between-small: screen and (min-width: 480px) and (max-width: 855px);
+
+@import 'breakpoint';
+@import 'base';
+@import 'index';
