@@ -348,7 +348,8 @@ p > a {
   float: left;
   margin-left: 20px;
   margin-top: 18px;
-  color: #2d777a; }
+  color: #2d777a;
+  max-width: 60%; }
 
 .team-portrait {
   float: left;
