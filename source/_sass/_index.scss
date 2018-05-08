@@ -12,6 +12,9 @@
     @include breakpoint($large) {
         background-image: none!important;
     }
+    h3 {
+      opacity: 1;
+    }
     .gradient {
         position: absolute;
         top: 0;
