@@ -1,16 +1,55 @@
----
-layout: default
-title: Data Stewards
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<main role="main"> <!-- main content starts here -->
+    <meta property="og:title" content="Data Stewards" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://datastewards.net/" />
+    <meta property="og:image" content="https://datastewards.net/images/logo-data-stewards-v-color.png" />
+    <meta property="og:description" content=""/>
+
+    <title>Data Stewards</title>
+
+    <link rel="stylesheet" href="/vendor/foundation.min.css">
+    <link rel="stylesheet" href="/vendor/slick.css"/>
+    <link rel="stylesheet" href="/vendor/modernizr.css">
+    <link rel="stylesheet" href="/vendor/styleguide-v2.1.css">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <script src="https://use.typekit.net/ktv0oxg.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href=https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
+  </head>
+
+  <body>
+    <header class="top-bar">
+  <!-- <span class="top-bar__button js-trigger-menu">menu</span>
+  <nav class="main-menu js-target-menu main-menu--left">
+    <a href="/">Home</a>
+  </nav> -->
+  <a class="top-bar__logo" href="/">
+    <img src="/images/govlab-logo-white.png" alt="GovLab Logo">
+  </a>
+  <!-- <span class="top-bar__button js-trigger-menu">more_vert</span>
+  <nav class="main-menu js-target-menu main-menu--right">
+    <a href="#">Github Repository</a>
+    <a href="/sandbox.html">Sandbox</a>
+  </nav> -->
+</header>
+
+
+    <main role="main"> <!-- main content starts here -->
   <section class="top-section" style="">
     <div class="gradient"></div>
     <div class="row align-center">
       <div class="large-10 medium-12 column">
         <div class="top-section__logo">
-          <img class="lg-img" src="{{'/images/logo-data-stewards-main-neg.png' | relative_url}}" alt="Blockchange Logo">
-          <img class="sm-img" src="{{'/images/logo-data-stewards-v-neg.png' | relative_url}}" alt="Blockchange Logo">
+          <img class="lg-img" src="/images/logo-data-stewards-main-neg.png" alt="Blockchange Logo">
+          <img class="sm-img" src="/images/logo-data-stewards-v-neg.png" alt="Blockchange Logo">
         </div>
         <div class="top-section__text">
           <p>
@@ -32,7 +71,7 @@ title: Data Stewards
     </div>
   </section>
 
-  <section class="bg-panel page-section page-section--no-padding" style="background-image: url({{'/images/background-1.jpg' | relative_url}})"">
+  <section class="bg-panel page-section page-section--no-padding" style="background-image: url(/images/background-1.jpg)"">
   <div class="row expanded collapse bg-panel__row">
     <div class="column large-6 small-12">
       <div class="bg-panel__content bg-panel__content--dark" style="">
@@ -63,7 +102,7 @@ title: Data Stewards
 </div>
 </section>
 
-<section class="bg-panel page-section page-section--no-padding" style="background-image: url({{'/images/background-2.jpg' | relative_url}})"">
+<section class="bg-panel page-section page-section--no-padding" style="background-image: url(/images/background-2.jpg)"">
 <div class="row expanded collapse bg-panel__row">
   <div class="column large-6 large-offset-6 small-12">
     <div class="bg-panel__content bg-panel__content--dark" style="">
@@ -155,3 +194,48 @@ title: Data Stewards
 </main>
 
 
+
+
+    <footer class='footer'>
+  <div class="row align-center">
+    <div class="column large-10 large-offset-1 small-10 medium-5">
+      <div class="footer__content">
+        <a class=""  href="http://thegovlab.org/"><img src="/images/govlab-logo-white.png" alt="The GovLab"></a>
+        <a class=""  href="https://www.hewlett.org/"><img src="/images/hewlett-logo.png" alt="Hewlett Foundation"></a>
+        <a class="footer__content__text-link" href="http://www.brightfrontgroup.com/">BrightFront Group</a><br>
+        <a class="footer__content__text-link" href="http://weadapt.io/">Adapt</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <div class="copyright">
+  <div class="row align-center">
+    <div class="large-10 column">
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img class="copyright__cc-badge" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+      </a>
+      <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></p>
+    </div>
+  </div>
+</div>
+
+
+    <div id="overlay" class="js-overlay"></div>
+    <script src="/vendor/jquery-2.1.4.min.js"></script>
+    <script src="/vendor/slick.min.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/background.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-40012093-16', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>
