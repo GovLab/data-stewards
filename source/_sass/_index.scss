@@ -1,7 +1,7 @@
 .top-section {
     overflow: hidden;
     margin-top: -50px;
-    background-color: $purple!important;
+    background-color: $main-color!important;
     position: relative;
     @include breakpoint($small-only) {
         background-size: 165%;
@@ -18,7 +18,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-image: linear-gradient(rgba(0,0,0,0),$purple);
+        background-image: linear-gradient(rgba(0,0,0,0),$main-color);
         z-index: 1;
     }
     &__logo {
@@ -37,7 +37,7 @@
             padding-top: 120px;
         }
         @include breakpoint($large) {
-            padding: 120px;
+            padding: 20px;
             padding-top: 190px;
             padding-bottom: 0;
         }
@@ -62,7 +62,7 @@
         position: relative;
         z-index: 2;
         font-size: 1.3rem;
-        color: $yellow;
+        color: $alt-color;
         // padding-top: 20px;
         padding-bottom: 50px;
         // text-align: left;
@@ -88,9 +88,30 @@
 .bg-panel {
     background-position: center;
     background-size: cover;
-    &__content {
+    &__row {
+      &--dark {
+        background-color: rgba(darken($main-color,3),.75);
         color: white;
-        background-color: rgba(darken($purple,3),.75);
+      }
+      &--light {
+        background-color: rgba($alt-color,.75);
+        color: darken($main-color,8);
+      }
+    }
+    &__content {
+        // color: white;
+        // background-color: rgba(darken($main-color,3),.75);
+        // &--v-padded {
+        //   padding: 70px 0;
+        // }
+        &--light {
+          background-color: rgba($alt-color,.75);
+          color: darken($main-color,8);
+        }
+        &--dark {
+          background-color: rgba(darken($main-color,3),.75);
+          color: white;
+        }
         @include breakpoint($medium) {
             padding: 50px;
         }
@@ -118,24 +139,39 @@
         }
     }
     &--purple {
-        color: $yellow;
-        background-color: $purple;
+        color: $alt-color;
+        background-color: $main-color;
     }
 }
 .page-section {
-    color: lighten($purple,10);
+    color: lighten($main-color,10);
     font-weight: 200;
+    &--no-padding {
+      padding: 0;
+    }
     a {
-        border-bottom: 1px solid darken($light-yellow,25%);
+        border-bottom: 1px solid darken($alt-color-light,25%);
         &:hover {
             text-decoration: none;
-            background-color: darken($light-yellow,15%);
-            border-bottom: 1px solid darken($light-yellow,40%);
+            background-color: darken($alt-color-light,15%);
+            border-bottom: 1px solid darken($alt-color-light,40%);
         }
     }
     .content {
         padding-left: 60px;
         padding-right: 60px;
+        // &--v-padded {
+        //   padding: 70px 0;
+        // }
+        @include breakpoint($medium) {
+            padding: 30px 0;
+        }
+        @include breakpoint($small-only) {
+            padding: 20px 0;
+        }
+        @include breakpoint($large) {
+            padding: 40px 0;
+        }
         h3 {
             font-size: 1.5rem;
             font-weight: 200;
@@ -155,10 +191,10 @@
         }
     }
     &--yellow {
-        background-color: $light-yellow;
+        background-color: $alt-color-light;
     }
     &--blue {
-        background-color: $light-purple;
+        background-color: $main-color-light;
         .contact {
             text-align: center;
             h3 {
@@ -180,9 +216,9 @@
                 margin-bottom: 5px;
                 padding: 5px 10px;
                 &:hover {
-                    background-color: $purple;
+                    background-color: $main-color;
                     color: white;
-                    border-color: $purple;
+                    border-color: $main-color;
                     // transition: all .6s ease;
                 }
             }
@@ -192,11 +228,12 @@
 .page-section--team {
     .column {
         margin: 20px 0;
+        // text-align: center;
     }
     .modal {
         font-weight: 100;
         padding: 80px;
-        background-color: $purple;
+        background-color: darken($main-color,8);
         color: rgba(255,255,255,0.8);
         box-shadow: none;
         height: 80vh;
@@ -233,6 +270,7 @@
             margin-bottom: 20px;
         }
         &__text {
+            color: darken($main-color,8);
             float: left;
             margin-left: 40px;
             width: 60%;
@@ -276,9 +314,10 @@
     }
 }
 .team-text {
-    float: left;
+    // float: left;
     margin-left: 20px;
     margin-top: 18px;
+    color: darken($main-color,8);
 }
 .team-portrait {
     float: left;
