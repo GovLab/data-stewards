@@ -70,6 +70,17 @@ p > a {
   .copyright__cc-badge {
     display: inline; } }
 
+.page-section .button {
+  border-bottom: none; }
+  .page-section .button:hover {
+    border-bottom: none; }
+
+.centered {
+  text-align: center; }
+
+.block-centered {
+  margin: 0 auto; }
+
 .top-section {
   overflow: hidden;
   margin-top: -50px;
@@ -84,8 +95,6 @@ p > a {
   @media (min-width: 64em) {
     .top-section {
       background-image: none !important; } }
-  .top-section h3 {
-    opacity: 1; }
   .top-section .gradient {
     position: absolute;
     top: 0;
@@ -129,9 +138,15 @@ p > a {
   .top-section__text {
     position: relative;
     z-index: 2;
-    font-size: 1.3rem;
-    color: #DBD5A8;
-    padding-bottom: 50px; }
+    color: #DBD5A8; }
+    .top-section__text > h3 {
+      padding: 0 45px 50px 45px;
+      opacity: 1;
+      font-size: 1.9rem; }
+    .top-section__text:after {
+      content: "";
+      display: inline-block;
+      width: 100%; }
     .top-section__text span {
       font-size: 1.5rem; }
       @media (max-width: 39.9375em) {
@@ -139,15 +154,19 @@ p > a {
           font-size: 1.4rem; } }
     @media (max-width: 39.9375em) {
       .top-section__text {
-        font-size: 1.1rem; } }
+        font-size: 1.1rem;
+        text-align: center; } }
     @media (min-width: 40em) {
       .top-section__text {
         padding-left: 50px;
-        padding-right: 50px; } }
+        padding-right: 50px;
+        text-align: center; } }
     @media (min-width: 64em) {
       .top-section__text {
         padding-left: 0;
-        padding-right: 0; } }
+        padding-right: 0;
+        text-align: justify;
+        text-align-last: justify; } }
 
 .bg-panel {
   background-position: center;
@@ -328,6 +347,7 @@ p > a {
         background-color: transparent; }
 
 .team-text {
+  float: left;
   margin-left: 20px;
   margin-top: 18px;
   color: #2d777a; }
