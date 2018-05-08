@@ -140,9 +140,9 @@ p > a {
     z-index: 2;
     color: #DBD5A8; }
     .top-section__text > h3 {
-      padding: 0 45px 50px 45px;
+      padding: 0 40px 50px 40px;
       opacity: 1;
-      font-size: 1.9rem; }
+      font-size: 2.12rem; }
     .top-section__text:after {
       content: "";
       display: inline-block;
@@ -164,9 +164,7 @@ p > a {
     @media (min-width: 64em) {
       .top-section__text {
         padding-left: 0;
-        padding-right: 0;
-        text-align: justify;
-        text-align-last: justify; } }
+        padding-right: 0; } }
 
 .bg-panel {
   background-position: center;
