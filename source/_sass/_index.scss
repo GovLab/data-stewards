@@ -12,9 +12,6 @@
     @include breakpoint($large) {
         background-image: none!important;
     }
-    h3 {
-      opacity: 1;
-    }
     .gradient {
         position: absolute;
         top: 0;
@@ -64,11 +61,17 @@
     &__text {
         position: relative;
         z-index: 2;
-        font-size: 1.3rem;
         color: $alt-color;
-        // padding-top: 20px;
-        padding-bottom: 50px;
-        // text-align: left;
+        & > h3 {
+          padding: 0 45px 50px 45px;
+          opacity: 1;
+          font-size: 1.9rem;
+        }
+        &:after {
+          content: "";
+          display: inline-block;
+          width: 100%;
+        }
         span {
             font-size: 1.5rem;
             @include breakpoint($small-only) {
@@ -77,14 +80,18 @@
         }
         @include breakpoint($small-only) {
             font-size: 1.1rem;
+            text-align: center;
         }
         @include breakpoint($medium) {
             padding-left: 50px;
             padding-right: 50px;
+            text-align: center;
         }
         @include breakpoint($large) {
             padding-left: 0;
             padding-right: 0;
+            text-align: justify;
+            text-align-last: justify;
         }
     }
 }
@@ -317,7 +324,7 @@
     }
 }
 .team-text {
-    // float: left;
+    float: left;
     margin-left: 20px;
     margin-top: 18px;
     color: darken($main-color,8);

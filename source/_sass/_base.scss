@@ -92,3 +92,23 @@ p>a {
   }
 }
 }
+
+.button {
+
+}
+.page-section {
+  .button {
+    border-bottom: none;
+    &:hover {
+      border-bottom: none;
+    }
+  }
+}
+
+.centered {
+  text-align: center;
+}
+
+.block-centered {
+  margin: 0 auto;
+}
