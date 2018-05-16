@@ -84,7 +84,7 @@ p > a {
 .top-section {
   overflow: hidden;
   margin-top: -50px;
-  background-color: #389498 !important;
+  background-color: #389498;
   position: relative; }
   @media (max-width: 39.9375em) {
     .top-section {
@@ -94,7 +94,7 @@ p > a {
       background-size: 150%; } }
   @media (min-width: 64em) {
     .top-section {
-      background-image: none !important; } }
+      background-image: none; } }
   .top-section .gradient {
     position: absolute;
     top: 0;
