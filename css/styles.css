@@ -81,20 +81,62 @@ p > a {
 .block-centered {
   margin: 0 auto; }
 
+.hex .top {
+  width: 0;
+  border-bottom: 30px solid #389498;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent; }
+
+.hex .middle {
+  width: 104px;
+  height: 60px;
+  background: #389498; }
+
+.hex .bottom {
+  width: 0;
+  border-top: 30px solid #389498;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent; }
+
+.hex {
+  float: left;
+  margin-left: 3px;
+  margin-bottom: -26px; }
+  .hex--img .middle {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/logo-data-stewards-gray-neg-small.png");
+    background-repeat: no-repeat;
+    background-size: 106px;
+    background-position: -1px -1px;
+    height: 120px; }
+  .hex--img .top {
+    border: none; }
+  .hex--img .bottom {
+    border: none; }
+  .hex--img--alt {
+    background-image: url("../images/logo-data-stewards-gray-neg-small.png"); }
+
+.hex-row {
+  clear: left; }
+
+.hex-row.even {
+  margin-left: 53px; }
+
 .top-section {
   overflow: hidden;
   margin-top: -50px;
   background-color: #389498;
   position: relative; }
-  @media (max-width: 39.9375em) {
-    .top-section {
-      background-size: 165%; } }
-  @media (min-width: 40em) {
-    .top-section {
-      background-size: 150%; } }
-  @media (min-width: 64em) {
-    .top-section {
-      background-image: none; } }
+  .top-section--tile-image-background {
+    background-repeat: repeat; }
+  .top-section__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    .top-section__overlay--white {
+      background-color: rgba(255, 255, 255, 0.25); }
   .top-section .gradient {
     position: absolute;
     top: 0;
@@ -103,6 +145,16 @@ p > a {
     right: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0), #389498);
     z-index: 1; }
+    .top-section .gradient--down {
+      background-image: linear-gradient(rgba(0, 0, 0, 0), #389498); }
+    .top-section .gradient--up {
+      background-image: linear-gradient(#389498, rgba(0, 0, 0, 0)); }
+    .top-section .gradient--left {
+      background-image: linear-gradient(90deg, #389498, rgba(0, 0, 0, 0)); }
+    .top-section .gradient--right {
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #389498); }
+    .top-section .gradient--45-top-left {
+      background-image: linear-gradient(135deg, #389498 50%, rgba(56, 148, 152, 0)); }
   .top-section__logo {
     position: relative;
     z-index: 2; }
