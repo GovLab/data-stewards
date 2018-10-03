@@ -81,6 +81,9 @@ p > a {
 .block-centered {
   margin: 0 auto; }
 
+.sticky--main {
+  background-color: #389498; }
+
 .hex .top {
   width: 0;
   border-bottom: 30px solid #389498;
