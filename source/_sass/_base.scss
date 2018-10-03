@@ -112,3 +112,9 @@ p>a {
 .block-centered {
   margin: 0 auto;
 }
+
+.sticky {
+  &--main {
+    background-color: $main-color;
+  }
+}
